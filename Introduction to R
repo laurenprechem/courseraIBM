@@ -18,6 +18,7 @@ return(response)
 # Call the get_wiki_covid19_page function and print the response
 get_wiki_covid19_page("https://en.wikipedia.org/w/index.php","Template:COVID-19_testing_by_country")
 
+#TASK 2
 # Get the root html node from the http response in task 1 
 target_url <-get_wiki_covid19_page("https://en.wikipedia.org/w/index.php","Template:COVID-19_testing_by_country")
 root_node <- read_html(target_url)
